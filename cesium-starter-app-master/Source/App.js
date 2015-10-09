@@ -6,9 +6,9 @@ viewer.dataSources.add(Cesium.KmlDataSource.load('http://hajime-miyauchi.github.
 //視点の変更
 viewer.camera.flyTo({ destination : Cesium.Cartesian3.fromDegrees(138.384155, 35.056608, 1500000.0)});
 
-var point = viewer.entities;
+var entities = viewer.entities;
 
-point.add({
+entities.add({
         position : Cesium.Cartesian3.fromDegrees(136.882533, 35.171112),
         point : {
             pixelSize : 10,
@@ -18,7 +18,7 @@ point.add({
 
 var point2 = viewer.entities;
 
-point2.add({
+entities.add({
         position : Cesium.Cartesian3.fromDegrees(139.701850, 35.658252),
         point : {
             pixelSize : 10,
