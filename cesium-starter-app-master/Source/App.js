@@ -5,3 +5,13 @@ viewer.dataSources.add(Cesium.KmlDataSource.load('http://hajime-miyauchi.github.
 
 //視点の変更
 viewer.camera.flyTo({ destination : Cesium.Cartesian3.fromDegrees(138.384155, 35.056608, 1500000.0)});
+
+var point = viewer.entities;
+
+point.add({
+        position : Cesium.Cartesian3.fromDegrees(136.882533, 35.171112),
+        point : {
+            pixelSize : 10,
+            color : Cesium.Color.YELLOW
+    }
+});
